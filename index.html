@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>414 Stardust Avenue</title>
@@ -11,94 +9,121 @@
   <meta name="keywords" content="digital art, art, space, kawaii, tshirts, totes, pillows">
 
   <style>
-    .shop-button {
-      display: block;
-      width: 250px;
-      height: 100px;
-      margin: 20px auto;
+    body, p, footer, h2 {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f7f7f7;
       text-align: center;
-      line-height: 50px;
-      background-size: cover;
-      background-position: center;
-      border: 1pt solid black;
-    }
-    .redbubble-button {
-      background-image: url('redbubble.png');
-    }
-    .teepublic-button {
-      background-image: url('teepublic.png');
-    }
-    .amazonmerch-button {
-      background-image: url('amazonmerch.png');
+      line-height: 1.6;
     }
 
     header {
-      text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
       background: #ffffff;
     }
 
-    .contact-section {
-      text-align: center;
-      margin-top: 20px;
+    header img {
+      width: 100%;
+      max-width: 600px; 
+      height: auto;
     }
 
-    body, p, footer {
-      font-family: 'Abel', sans-serif;
+    .shop-button {
+      display: inline-block; 
+      width: 220px;
+      height: 80px;
+      margin: 20px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .shop-button:hover {
+      transform: scale(1.05);
+    }
+
+    .redbubble-button { background-image: url('redbubble.png'); }
+    .teepublic-button { background-image: url('teepublic.png'); }
+    .amazonmerch-button { background-image: url('amazonmerch.png'); }
+
+    .contact-section {
+      margin: 40px 20px;
     }
 
     .contact-section p {
-      font-size: 1.2em;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #666; 
+      text-decoration: none; 
+    }
+
+    a:hover {
+      color: #333; 
     }
 
     footer {
-      font-size: 1.1em;
-      text-align: center;
+      padding: 20px 0;
+      background: #444; 
+      color: #ddd; 
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
     }
   </style>
-
 </head>
 
 <body>
 <header>
-  <a href="https://www.414stardustavenue.com/"><img src="414_Stardust_Avenue_Logo.png" alt="414 Stardust Avenue logo" style="width: 100%; max-width: 500px;"></a>
+  <a href="https://www.414stardustavenue.com/">
+    <img src="414_Stardust_Avenue_Logo.png" alt="414 Stardust Avenue logo">
+  </a>
 </header>
 
 <section class="contact-section">
-  <p>For inquiries, custom requests, or feedback, please reach out to us at: <a href="mailto:414stardustavenue@gmail.com">414stardustavenue@gmail.com</a>.</p>
+  <p>For inquiries, custom requests, or feedback, please reach out to us at: 
+    <a href="mailto:414stardustavenue@gmail.com">414stardustavenue@gmail.com</a>.
+  </p>
 </section>
 
 <hr>
 
-      <div class="row">
-        <div class="col s12" style="text-align: center;">
-          <h2>Shop Our Designs</h2>
-          <br>
-          <a href="https://www.amazon.com/s/ref=bl_sl_s_ap_web_7141123011?ie=UTF8&node=7141123011&field-brandtextbin=414+Stardust+Avenue" target="_blank">
-          <button class="shop-button amazonmerch-button"></button>
-          </a>
-          <a href="https://asilentcowbell.redbubble.com/" target="_blank">
-          <button class="shop-button redbubble-button"></button>
-          </a>
-          <a href="http://tee.pub/lic/SAz-0SZmsZ8" target="_blank">
-          <button class="shop-button teepublic-button"></button>
-          </a>
-        </div>
-      </div>
+<section class="shop-section">
+  <h2>Explore Our Creations</h2>
+  <a href="https://www.amazon.com/s/ref=bl_sl_s_ap_web_7141123011?ie=UTF8&node=7141123011&field-brandtextbin=414+Stardust+Avenue" target="_blank">
+    <div class="shop-button amazonmerch-button"></div>
+  </a>
+  <a href="https://asilentcowbell.redbubble.com/" target="_blank">
+    <div class="shop-button redbubble-button"></div>
+  </a>
+  <a href="http://tee.pub/lic/SAz-0SZmsZ8" target="_blank">
+    <div class="shop-button teepublic-button"></div>
+  </a>
+</section>
 
 <hr>
 
-<footer class="probootstrap-footer" role="contentinfo">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="probootstrap-copyright">&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.414stardustavenue.com/">414 Stardust Avenue</a> All Rights Reserved.</p>
-      </div>
-    </div>
-  </div>
+<footer>
+  <p>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.414stardustavenue.com/">414 Stardust Avenue</a>. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
+
 
 

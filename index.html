@@ -20,6 +20,9 @@
       background-color: #f7f7f7;
       text-align: center;
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -29,18 +32,25 @@
 
     header img {
       width: 100%;
-      max-width: 400px; 
+      max-width: 350px;
       height: auto;
     }
 
+    .shop-section {
+      flex: 1;
+    }
+
     .shop-button {
-      display: inline-block; 
-      width: 220px;
-      height: 80px;
-      margin: 20px;
+      display: block;
+      width: 250px;
+      height: 100px;
+      margin: 40px auto;
+      text-align: center;
+      line-height: 50px;
       background-size: cover;
       background-position: center;
       border-radius: 8px;
+      border: 1pt solid black;
       transition: transform 0.3s ease;
     }
 
@@ -51,7 +61,6 @@
     .redbubble-button { background-image: url('redbubble.png'); }
     .teepublic-button { background-image: url('teepublic.png'); }
     .amazonmerch-button { background-image: url('amazonmerch.png'); }
-    .shopifyprintful-button { background-image: url('shopify.png'); }
 
     .contact-section {
       margin: 40px 20px;
@@ -68,22 +77,22 @@
     }
 
     a {
-      color: #666; 
-      text-decoration: none; 
+      color: #333;
+      text-decoration: none;
     }
 
     a:hover {
-      color: #333; 
+      color: #7a7a7a;
     }
 
     footer {
       padding: 20px 0;
-      background: #444; 
-      color: #ddd; 
+      background: #afafaf;
+      color: #afafaf;
     }
 
     footer a {
-      color: #ddd;
+      color: #333;
       text-decoration: none;
     }
   </style>
@@ -91,14 +100,14 @@
 
 <body>
 <header>
-  <a href="https://www.onstardustavenue.com/">
+  <a href="http://www.onstardustavenue.com/" target="_blank">
     <img src="transparent_logo_onstardustavenue.png" alt="On Stardust Avenue logo">
   </a>
 </header>
 
 <section class="contact-section">
-  <p>For inquiries, custom requests, or feedback, please reach out to us at: 
-    <a href="mailto:414stardustavenue@gmail.com">onstardustavenue@gmail.com</a>
+  <p>For inquiries, custom requests, or feedback, please reach out:
+    <a href="#" onclick="window.open('mailto:onstardustavenue@gmail.com', '_blank');">onstardustavenue@gmail.com</a>
   </p>
 </section>
 
@@ -106,9 +115,6 @@
 
 <section class="shop-section">
   <h2>Shop Our Designs</h2>
-  <!-- <a href="https://www.414stardustavenue.com/" target="_blank">
-    <div class="shop-button shopifyprintful-button"></div>
-  </a> -->
   <a href="https://www.amazon.com/s/ref=bl_sl_s_ap_web_7141123011?ie=UTF8&node=7141123011&field-brandtextbin=414+Stardust+Avenue" target="_blank">
     <div class="shop-button amazonmerch-button"></div>
   </a>
@@ -123,11 +129,11 @@
 <!-- <hr> -->
 
 <footer>
-  <p>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.onstardustavenue.com/">On Stardust Avenue</a>. All Rights Reserved.</p>
+  <p>&copy; <script>document.write(new Date().getFullYear())</script>
+    <a href="http://www.onstardustavenue.com/" target="_blank">On Stardust Avenue</a>. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
-
 
 

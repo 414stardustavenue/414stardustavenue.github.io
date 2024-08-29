@@ -49,14 +49,16 @@
       line-height: 50px;
       background-size: cover;
       background-position: center;
-      border-radius: 8px;
-      border: 1pt solid black;
-      transition: transform 0.3s ease;
+      border-radius: 0;
+      border: 1px solid black;
+      background-color: #f0f0f0;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
-    .shop-button:hover {
-      transform: scale(1.05);
-    }
+      .shop-button:hover {
+        background-color: #e0e0e0; 
+        transform: scale(1.05); 
+      }
 
     .redbubble-button { background-image: url('redbubble.png'); }
     .teepublic-button { background-image: url('teepublic.png'); }
